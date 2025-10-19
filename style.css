@@ -1,4 +1,4 @@
-/* Reset spacing */
+/* Reset spacing and base layout */
 body {
   margin: 0;
   padding: 0;
@@ -11,9 +11,38 @@ body {
   height: 100vh;
 }
 
-/* Style name */
+/* Center container */
+.container {
+  text-align: center;
+}
+
+/* Style for name */
 h1 {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+/* Navigation styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+  color: #0078ff;
+  transform: scale(1.1);
 }
