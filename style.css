@@ -1,34 +1,36 @@
-/* Reset spacing and base layout */
+/* Reset and basic layout */
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
   color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
-/* Center container */
-.container {
+/* Header bar */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 10px 0;
   text-align: center;
+  z-index: 1000;
 }
 
-/* Style for name */
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+/* Name styling */
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #222;
 }
 
 /* Navigation styling */
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 10px 0 0 0;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -37,7 +39,7 @@ nav ul {
 nav a {
   text-decoration: none;
   color: #333;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   transition: color 0.3s, transform 0.2s;
 }
@@ -45,4 +47,11 @@ nav a {
 nav a:hover {
   color: #0078ff;
   transform: scale(1.1);
+}
+
+/* Main content spacing */
+main {
+  margin-top: 120px; /* so content isn’t hidden behind fixed header */
+  text-align: center;
+  font-size: 1.2rem;
 }
