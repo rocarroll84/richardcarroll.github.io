@@ -42,9 +42,9 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Main content below header */
+/* Main content spacing */
 main {
-  margin-top: 100px;
+  margin-top: 100px; /* ensures content sits below fixed header */
   text-align: center;
   font-size: 1.2rem;
 }
