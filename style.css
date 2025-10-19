@@ -6,7 +6,7 @@ body {
   color: #222;
 }
 
-/* Header bar at top */
+/* Header bar */
 header {
   position: fixed;
   top: 0;
@@ -14,17 +14,25 @@ header {
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 15px 0;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 1000;
+}
+
+/* Logo styling */
+.logo img {
+  height: 50px; /* adjust size as needed */
+  width: auto;
 }
 
 /* Navigation menu */
 nav ul {
-  list-style: none; /* removes bullets */
+  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
   gap: 40px;
 }
 
@@ -42,9 +50,10 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Main content spacing */
+/* Main content */
 main {
-  margin-top: 100px; /* ensures content sits below fixed header */
+  margin-top: 120px; /* so content isn’t hidden behind header */
   text-align: center;
   font-size: 1.2rem;
 }
+
