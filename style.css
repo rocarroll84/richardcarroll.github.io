@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Base layout */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -14,17 +14,18 @@ header {
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 40px;
+  padding: 8px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
 }
 
-/* Logo styling */
+/* Logo styling (smaller and aligned) */
 .logo img {
-  height: 50px; /* adjust size as needed */
+  height: 40px;  /* Reduced from 50px to 40px */
   width: auto;
+  vertical-align: middle;
 }
 
 /* Navigation menu */
@@ -33,14 +34,15 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 40px;
+  align-items: center;
+  gap: 35px;
 }
 
 /* Navigation links */
 nav a {
   text-decoration: none;
   color: #333;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -50,10 +52,29 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Main content */
+/* Main content spacing */
 main {
-  margin-top: 120px; /* so content isn’t hidden behind header */
+  margin-top: 100px; /* leaves space below fixed header */
   text-align: center;
   font-size: 1.2rem;
+}
+
+/* Responsive fix for small screens */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
 }
 
