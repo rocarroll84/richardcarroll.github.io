@@ -14,38 +14,39 @@ header {
   width: 100%;
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 60px;
+  padding: 10px 40px;         
   display: flex;
-  align-items: center;   /* vertical alignment */
+  align-items: center;         
   justify-content: space-between;
   z-index: 1000;
 }
 
-/* Logo styling (balanced with links) */
+/* Logo styling */
 .logo img {
-  height: 35px !important;
-  width: auto !important;
-  max-height: 35px !important;
+  height: 35px !important;      
+  width: auto !important;       
+  max-height: 35px !important;  
   object-fit: contain;
   vertical-align: middle;
-  margin-right: 20px; /* space between logo and links */
+  margin-right: 20px;           
 }
 
 /* Navigation menu */
 nav ul {
-  list-style: none;
+  list-style: none;             
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;                    
+  flex-wrap: nowrap;            
 }
 
 /* Navigation links */
 nav a {
   text-decoration: none;
   color: #333;
-  font-size: 1.05rem;
+  font-size: 1rem;             
   font-weight: 500;
   transition: color 0.3s ease, transform 0.2s ease;
 }
@@ -57,7 +58,7 @@ nav a:hover {
 
 /* Main content */
 main {
-  margin-top: 100px; /* space below fixed header */
+  margin-top: 100px;            
   text-align: center;
   font-size: 1.2rem;
 }
@@ -80,3 +81,4 @@ main {
     gap: 15px;
   }
 }
+
