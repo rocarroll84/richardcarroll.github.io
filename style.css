@@ -1,105 +1,60 @@
-/* Base layout */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #222;
+  color: #444;
 }
 
-/* Header bar */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 8px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  z-index: 1000;
-}
-
-/* Logo styling */
-.logo img {
-  height: 35px;
-  width: auto;
-  max-height: 35px;
-  object-fit: contain;
-  margin-right: 20px;
-  flex-shrink: 0; 
-  transition: height 0.2s ease;
-}
-
-/* Navigation menu container */
-nav {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end; 
-}
-
-/* Navigation list */
-nav ul {
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  flex-wrap: nowrap;
-}
-
-/* Navigation items */
-nav li {
-  flex-shrink: 1; 
-}
-
-/* Navigation links */
-nav a {
-  text-decoration: none;
-  color: #333;
-  font-size: 0.95rem;
-  font-weight: 500;
-  white-space: nowrap; 
-  transition: color 0.3s ease, transform 0.2s ease;
-}
-
-nav a:hover {
-  color: #0078ff;
-  transform: scale(1.05);
-}
-
-/* Main content spacing */
-main {
-  margin-top: 80px; 
+/* Navigation */
+.navbar {
+  background: #111;
+  padding: 12px;
   text-align: center;
-  font-size: 1.2rem;
 }
 
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .logo img {
-    height: 30px;
-  }
-  nav a {
-    font-size: 0.9rem;
-  }
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
 }
 
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
+.navbar a:hover {
+  text-decoration: underline;
+}
 
-  .logo img {
-    height: 28px;
-    margin-bottom: 8px;
-  }
+/* Hero (top section) */
+.hero {
+  height: 60vh;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 
-  nav ul {
-    flex-direction: column;
-    gap: 12px;
-    justify-content: center;
-  }
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Content section */
+.content {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 20px;
+  margin-top: 60px;
 }
