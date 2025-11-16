@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Resume - Richard Carroll</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
   <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Richard Carroll</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </nav>
 
-   <section class="content">
-    <h1>Resume</h1>
-    <p>Under Construction</p>
-  </section>
+  <main>
+    <section class="content">
+      <div class="card">
+        <h1 style="margin-bottom:6px">Resume</h1>
+        <p style="color:var(--muted)">Download a PDF version of my resume:</p>
+        <p>
+          <a class="btn" href="resume.pdf" download>Download Resume (PDF)</a>
+        </p>
+
+        <hr style="margin:20px 0; border: none; height:1px; background: rgba(255,255,255,0.03)">
+
+        <h2>Education</h2>
+        <p><strong>Computer Science — (In Progress)</strong> — Studying Computer Science</p>
+
+        <h2>Skills</h2>
+        <p>Languages: Python, JavaScript, C# (Unity), HTML &amp; CSS</p>
+        <p>Interests: Cybersecurity, Machine Learning, Web Development</p>
+
+        <h2>Experience</h2>
+        <p><strong>AT&amp;T — Technical / Work Experience</strong> — Worked in environments that require troubleshooting, customer-facing technical skills, and technical workflows (current).</p>
+
+        <h2>Selected Projects</h2>
+        <ul>
+          <li><strong>Hangman A.I.</strong> — Probabilistic reasoning + constraint filtering to guess letters.</li>
+          <li><strong>3D Unity Projects</strong> — Small games & demos exploring interactions and shaders.</li>
+          <li><strong>Machine Learning Projects</strong> — Entry-level classification models, data cleaning, model evaluation and visualization.</li>
+        </ul>
+
+        <p style="color:var(--muted)">If you want the formatted/resume-ready PDF, replace <code>resume.pdf</code> in the site folder with your final file.</p>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© 2025 Richard Carroll | Email: Richardowencarroll@gmail.com | Phone: 915-269-6977</p>
+    <div class="footer-inner">
+      <p>© 2025 Richard Carroll</p>
+      <p>Email: <a href="mailto:Richardowencarroll@gmail.com">Richardowencarroll@gmail.com</a> | Phone: 915-269-6977</p>
+    </div>
   </footer>
-
 </body>
 </html>
