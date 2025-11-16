@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Projects - Richard Carroll</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
   <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Richard Carroll</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <section class="content">
-    <h1>Projects</h1>
-    <p>Under Construction</p>
-  </section>
+  <main>
+    <section class="content">
+      <div class="card">
+        <h1>Projects</h1>
+        <p class="muted">Below are short summaries of some projects. Replace any placeholders with links or screenshots as you finish them.</p>
+
+        <div class="projects-grid" style="margin-top:18px;">
+          <article class="project">
+            <h3>Hangman A.I.</h3>
+            <p>A Python-based solver that combines dictionary filtering, letter-probability heuristics, and feedback updates to guess words efficiently.</p>
+          </article>
+
+          <article class="project">
+            <h3>3D Unity Projects</h3>
+            <p>Several Unity mini-projects including a simple platformer demo, physics-based puzzle, and exploration of lighting/shaders.</p>
+          </article>
+
+          <article class="project">
+            <h3>Machine Learning Projects</h3>
+            <p>Beginner ML experiments: dataset cleaning, feature extraction, training a compact classifier, and basic evaluation/visualization.</p>
+          </article>
+        </div>
+
+        <p style="margin-top:16px">
+          <a class="link-inline" href="resume.pdf">Download resume</a> • <a class="link-inline" href="contact.html">Contact me</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© 2025 Richard Carroll | Email: Richardowencarroll@gmail.com | Phone: 915-269-6977</p>
+    <div class="footer-inner">
+      <p>© 2025 Richard Carroll</p>
+      <p>Email: <a href="mailto:Richardowencarroll@gmail.com">Richardowencarroll@gmail.com</a> | Phone: 915-269-6977</p>
+    </div>
   </footer>
-
 </body>
 </html>
