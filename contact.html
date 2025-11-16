@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Contact - Richard Carroll</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
   <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Richard Carroll</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <section class="content">
-    <h1>Contact</h1>
-    <p>Email: <a href="mailto:Richardowencarroll@gmail.com">Richardowencarroll@gmail.com</a></p>
-    <p>Phone: 915-269-6977</p>
-  </section>
+  <main>
+    <section class="content">
+      <div class="card">
+        <h1>Contact</h1>
+        <p>Email: <a href="mailto:Richardowencarroll@gmail.com">Richardowencarroll@gmail.com</a></p>
+        <p>Phone: 915-269-6977</p>
+        <p style="color:var(--muted)">Prefer updates to projects or putting a polished resume? Drop your email and I’ll update the site files.</p>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
-    <p>© 2025 Richard Carroll | Email: Richardowencarroll@gmail.com | Phone: 915-269-6977</p>
+    <div class="footer-inner">
+      <p>© 2025 Richard Carroll</p>
+      <p>Email: <a href="mailto:Richardowencarroll@gmail.com">Richardowencarroll@gmail.com</a> | Phone: 915-269-6977</p>
+    </div>
   </footer>
-
 </body>
 </html>
