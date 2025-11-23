@@ -1,33 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Richard Carroll</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About - Richard Carroll</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Richard Carroll</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </nav>
 
-  <section class="page-section">
-    <h1>About Me</h1>
-    <p>
-      I am a Computer Science major specializing in cybersecurity, AI, and web development.
-      My goals include working in cybersecurity at an established company where I can apply
-      my technical skills to real-world challenges.
-    </p>
-    <img src="csu_logo.png" alt="CSU Logo" style="width:100px; margin-top:20px;">
-  </section>
+  <main>
+    <section class="content">
+      <div class="card about-card">
+        <h1>About Me</h1>
+        <p>I'm a Computer Science student focusing on cybersecurity, artificial intelligence, and web development. I currently work at AT&amp;T and aim to build a career in cybersecurity where I can apply and grow my technical skills.</p>
 
-  <footer>
-    <p>&copy; 2025 Richard Carroll</p>
+        <h2>Interests</h2>
+        <ul>
+          <li>Cybersecurity &amp; defensive solutions</li>
+          <li>Applied machine learning</li>
+          <li>Frontend &amp; backend web development</li>
+        </ul>
+
+        <h2>Goals</h2>
+        <p>To work in cybersecurity at an established company, contribute to meaningful security solutions, and continue learning across AI and systems engineering.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2025 Richard Carroll</p>
+      <p>Email: Richardowencarroll@gmail.com | Phone: 915-269-6977</p>
+    </div>
   </footer>
 </body>
 </html>
