@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Richard Carroll | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Richard Carroll — Computer Science</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
   <!-- Navigation -->
   <nav class="navbar">
-    <a href="index.html" class="active">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-inner">
+      <a class="logo" href="index.html">Richard Carroll</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-overlay">
+  <header class="hero" role="banner" aria-label="Hero section with background">
+    <img src="cs_back.jpg" alt="Computer science background with circuitry and code textures" class="hero-img">
+    <div class="hero-overlay" aria-hidden="true">
       <h1>Richard Carroll</h1>
       <p class="tagline">Software Engineer & Web Developer</p>
       <p class="subtagline">Computer Science Major | Cybersecurity, AI & Web Development</p>
     </div>
   </header>
 
-  <!-- Introduction Section -->
-  <section class="intro">
-    <h2>Welcome</h2>
-    <p>
-      Welcome to my professional portfolio. I am a Computer Science major focused on
-      cybersecurity, AI, and full-stack web development. This site highlights my work,
-      background, and professional goals.
-    </p>
-    <img src="csu_logo.png" alt="CSU Logo" style="width:120px; margin-top:20px;">
-  </section>
+  <!-- Content Section -->
+  <main>
+    <section id="overview" class="content">
+      <div class="card about-card">
+        <h2>Overview</h2>
+        <p>
+          I'm a Computer Science student and software developer currently working at AT&amp;T.
+          I'm passionate about cybersecurity, artificial intelligence, and web development.
+          My goal is to build a career in cybersecurity at an established company where I can apply my technical skills and continue learning.
+        </p>
+      </div>
+
+      <div class="card projects-preview">
+        <h2>Highlighted Projects</h2>
+
+        <div class="projects-grid">
+          <article class="project">
+            <h3>Hangman A.I.</h3>
+            <p>A Python project using probabilistic reasoning and constraint filtering to predict letters and solve hangman puzzles.</p>
+          </article>
+
+          <article class="project">
+            <h3>3D Unity Projects</h3>
+            <p>Small Unity-based applications exploring basic gameplay mechanics, physics interactions, and simple shader effects.</p>
+          </article>
+
+          <article class="project">
+            <h3>Machine Learning Projects</h3>
+            <p>Beginner ML workflow: dataset preprocessing, a simple classification model, and evaluation — focused on practical experimentation.</p>
+          </article>
+        </div>
+
+        <p class="projects-link">
+          <a href="projects.html" class="link-inline">See all projects &rarr;</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Richard Carroll</p>
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2025 Richard Carroll</p>
+      <p>Email: Richardowencarroll@gmail.com | Phone: 915-269-6977</p>
+    </div>
   </footer>
+
 </body>
 </html>
